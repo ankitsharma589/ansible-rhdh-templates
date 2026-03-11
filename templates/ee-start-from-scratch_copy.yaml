@@ -348,6 +348,7 @@ spec:
         createNewRepository: ${{ parameters.createNewRepository }}
         eeFileName: ${{ parameters.eeFileName }}
         contextDirName: ${{ steps['create-ee-definition'].output.contextDirName }}
+        githubToken: ${{ parameters.githubToken }} 
 
     - id: create-catalog-info-file
       action: catalog:write
